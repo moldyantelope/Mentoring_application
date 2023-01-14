@@ -87,7 +87,6 @@
             display: inline-block;
             position: static;
             margin-left: 60%;
-            margin-top: px;
             margin-bottom: 5%;
             font-family: sans-serif;
             border-radius: 8px;
@@ -117,7 +116,7 @@
         font-family:fantasy;
     }
 
-    img {
+    .phone {
         text-align: center;
         display: inline-block;
         margin-left: 40%;
@@ -125,8 +124,14 @@
         
     }
 
+    .profile_pic {
+        text-align: left;
+    }
 
-
+    .image {
+        text-align: left;
+        display: inline-block;
+    }
 
 
     </style>
@@ -135,7 +140,7 @@
 
 <body style="background: radial-gradient(circle, rgba(192,63,251,1) 0%, rgba(99,206,205,1) 100%);">
     <div>
-        <img src="Phone-PNG-Photo-Image.png" alt="dino" width = "70", height="100" >
+        <img src="Phone-PNG-Photo-Image.png" alt="dino" width = "70", height="100" class = "phone">
         <p class = "onnect"> onnect</p>
     </div>
     <h2 class="input">
@@ -234,15 +239,41 @@
                         <textarea class="about" name="about" placeholder="Write something.." style="height:140px"></textarea>
                         </label>
                         <br>
+                    </div>
+                
+                <div class = "profile_pic">
+                    <label for="">
+                        <br>
+                        <hr>
+                        <br>
+                        Please upload a profile picture that will be displayed for other users
+                        <br>
+                        <br>
+                        <form runat="server" class = "pic">
+                            <input accept="image/*" type='file' id="imgInp" />
+                            <br>
+                            <img id ="blah" src="#" class = "image" />
+                          </form>
+                    </label>
                 </div>
 
 
-            <input type="submit" class="submit" href=""></input>
+            <!-- <input type="submit" class="submit" href="mentor_give_dates.html"></input> -->
+            <a class="submit" href="mentor_give_dates.html"> Submit</a>
+
 
         </form>
 
     </h2>
 
 </body>
-
 </html>
+
+<script>
+    imgInp.onchange = evt => {
+      const [file] = imgInp.files
+      if (file) {
+        blah.src = URL.createObjectURL(file)
+      }
+    }
+    </script>
