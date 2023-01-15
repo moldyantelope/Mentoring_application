@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+     .input {
+            background: rgba(248, 247, 231, 0.763);
+            border-style:  double solid;
+            border-width: 10px;
+            border-radius: 50px;
+            border-color: rgb(68, 66, 62);
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-top: 7px;
+            margin-left: 17%;
+            margin-right: 17%;
+            margin-top: 15px;
+            margin-bottom: 50px;
+            flex: auto;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .header {
+            text-align: center;
+            font-size: 40px;
+            margin-top:3%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: white;
+
+        }
+
+        .submit {
+           margin-left:36%;
+            margin-bottom:7%;
+            padding: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
+            display: flex;
+            background-color: #3a4343;
+            color: rgb(243, 247, 255);
+            padding: 7px 30px;
+            text-decoration: none;
+            display: inline-block;
+            position: static;
+            margin-left: 60%;
+            margin-top: 17px;
+            margin-bottom: 5%;
+            font-family: sans-serif;
+            border-radius: 8px;
+            font-size: 14px;
+            border-color: antiquewhite;
+        }
+
+     
+        .calendar{
+            margin-top: 20px;
+            margin-bottom:20px;
+            display:inline-grid;
+            justify-content:center;
+            align-items:center;
+            background:#fff;
+            padding:10px;
+            border-radius:5px;
+            box-shadow:0px 40px 30px -20px rgba(154, 95, 95, 0.3);
+        }
+            
+  
+        .days{
+            display: grid;
+            justify-content:center;
+            align-items:center;
+            grid-template-columns: repeat(7, 1fr);
+            color:rgb(162, 55, 55);
+            font-weight:700;
+        }
+    
+        span{
+            width:50px;
+            justify-self:center;
+            align-self:center;
+            text-align:center;
+        }
+  
+        .dates{
+            display:grid;
+            grid-template-columns: repeat(7, 1fr);
+        }
+    
+        button{
+            cursor:pointer;
+            outline:0;
+            border:0;
+            background:transparent;
+            font-family: 'Montserrat', sans-serif;
+            font-size:14px;
+            justify-self:center;
+            align-self:center;
+            width:50px;
+            height:50px;
+            border-radius:50px;
+            margin:2px;
+            transition-duration:.2s;
+        }
+  
+      
+      :focus{
+        background:#983808;
+        color:#fff;
+        font-weight:600;
+      }
+
+        .times {
+          display: inline-table;
+        }
+
+        .button:hover {
+            background-color: #af97baab; 
+            color: rgb(27, 19, 19);
+        }
+
+        .button:focus{
+            background:#983808;
+        }
+
+        button:hover{
+            background-color: #e9a064ab;
+        }
+
+        .button {
+            background-color: #fefdf5f1;
+            font-size: 15px;
+            transition-duration: 0.4s;
+            flex-wrap: wrap;
+        }
+
+        .two-cols {
+            display:flex
+        }
+
+        .inline {
+            margin-left: 40px;
+        }
+
+        .today {
+            box-shadow:inset 0px 0px 0px 2px #780202;
+        }
+
+        .calendar__mon {
+            padding: 8px 16px;
+            margin-bottom:5px;
+            border: solid transparent;
+            color: #e3d3d3;
+            background-color: #780202;
+            width: 200px;
+            font-size:20px;
+            display: inline;
+        }
+
+
+</style>
+<body style = "background: radial-gradient(circle, rgba(251,88,63,1) 0%, rgba(250,208,66,1) 100%);">
+    <div class = "header">Book a Meeting</div>
+    <div class = "input">
+    
+              <div class="two-cols">
+                <div class="calendar">
+                    <div class="calendar__opts">
+                        <select name="calendar__month" id="calendar__month" style = "width: 200px;" class = "calendar__mon">
+                          <option>January</option>
+                          <option>February</option>
+                          <option>March</option>
+                          <option>April</option>
+                          <option >May</option>
+                          <option>June</option>
+                          <option>July</option>
+                          <option>August</option>
+                          <option>September</option>
+                          <option>October</option>
+                          <option>November</option>
+                          <option>December</option>
+                        </select>
+                        <select name="calendar__year" id="calendar__year" style = "width: 200px;" class = "calendar__mon">
+                          <option>2023</option>
+                          <option>2024</option>
+                          <option>2025</option>
+                        </select>
+                      </div>
+                    
+                    <div class="days">
+                      <span>Mon</span>
+                      <span>Tue</span>
+                      <span>Wed</span>
+                      <span>Thu</span>
+                      <span>Fri</span>
+                      <span>Sat</span>
+                      <span>Sun</span>
+                    </div>
+                    <div class="dates">
+                        <button>
+                          <time>1</time>
+                        </button>
+                        <button>
+                          <time>2</time>
+                        </button>
+                        <button>
+                          <time>3</time>
+                        </button>
+                        <button>
+                          <time>4</time>
+                        </button>
+                        <button>
+                          <time>5</time>
+                        </button>
+                        <button>
+                          <time>6</time>
+                        </button>
+                        <button>
+                          <time>7</time>
+                        </button>
+                        <button>
+                          <time>8</time>
+                        </button>
+                        <button>
+                          <time>9</time>
+                        </button>
+                        <button>
+                          <time>10</time>
+                        </button>
+                        <button>
+                          <time>11</time>
+                        </button>
+                        <button>
+                          <time>12</time>
+                        </button>
+                        <button>
+                          <time>13</time>
+                        </button>
+                        <button>
+                          <time>14</time>
+                        </button>
+                        <button>
+                          <time>15</time>
+                        </button>
+                        <button>
+                          <time>16</time>
+                        </button>
+                        <button>
+                          <time>17</time>
+                        </button>
+                        <button class="today">
+                          <time>18</time>
+                        </button>
+                        <button>
+                          <time>19</time>
+                        </button>
+                        <button>
+                          <time>20</time>
+                        </button>
+                        <button>
+                          <time>21</time>
+                        </button>
+                        <button>
+                          <time>22</time>
+                        </button>
+                        <button>
+                          <time>23</time>
+                        </button>
+                        <button>
+                          <time>24</time>
+                        </button>
+                        <button>
+                          <time>25</time>
+                        </button>
+                        <button>
+                          <time>26</time>
+                        </button>
+                        <button>
+                          <time>27</time>
+                        </button>
+                        <button>
+                          <time>28</time>
+                        </button>
+                        <button>
+                          <time>29</time>
+                        </button>
+                        <button>
+                          <time>30</time>
+                        </button>
+                        <button>
+                          <time>31</time>
+                        </button>
+                    </div>
+                  </div>
+                <div class="inline">
+                       Times:
+                        <div class = "times">
+                            <button type="button" class = "button">8:00</button>
+                            <button type="button" class = "button">9:00</button>
+                            <button type="button" class = "button">10:00</button>
+                            <button type="button" class = "button">11:00</button>
+                            <button type="button" class = "button">12:00</button>
+                            <br>
+                            <button type="button" class = "button">14:00</button>
+                            <button type="button" class = "button">15:00</button>
+                            <button type="button" class = "button">16:00</button>
+                            <button type="button" class = "button">17:00</button>
+                        </div>
+              </div>
+              </div>
+              <a class="submit" href="main.html"> Submit</a>
+              <!-- <input type="submit" class="submit" href="main.html"></input> -->
+          </form>
+
+    </div>
+
+
+</body>
+</html>
