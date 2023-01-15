@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        .input {
+            background: rgba(152, 115, 147, 0.641);
+            border-style:  double solid;
+            border-width: 10px;
+            border-radius: 50px;
+            border-color: rgb(67, 66, 62);
+            padding-left: 10%;
+            padding-right: 10%;
+            margin-left: 17%;
+            margin-right: 17%;
+            flex:auto;
+        }
+         .onnect {
+        display:inline;
+        left:4px;
+        font-size: 270%;
+        font-family:fantasy;
+        }
+
+        img {
+            display: inline-block;
+            margin-left: 40%;
+            font-size: 40px;
+            
+        }
+        .column{
+            float: left;
+        }
+        .column.left{
+            width:25%;
+        }
+        .column.middle{
+            width:25%;
+        }
+        .column.right{
+            width:50%;
+        }
+        .container {
+            display: block;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 15px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+
+/* Hide the browser's default checkbox */
+        .container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+
+/* Create a custom checkbox */
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            background-color: #eee;
+        }
+
+/* On mouse-over, add a grey background color */
+        .container:hover input ~ .checkmark {
+            background-color: #ccc;
+        }
+
+/* When the checkbox is checked, add a blue background */
+        .container input:checked ~ .checkmark {
+            background-color: #83b4dc;
+        }
+
+/* Create the checkmark/indicator (hidden when not checked) */
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+/* Show the checkmark when checked */
+        .container input:checked ~ .checkmark:after {
+            display: block;
+
+        }
+
+/* Style the checkmark/indicator */
+        .container .checkmark:after {
+            left: 9px;
+            top: 5px;
+            width: 5px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+        .checked {
+            color: rgb(145, 173, 194);
+        }
+        .button2 {background-color: #a2bec8;} /* Blue */
+        .button {
+            border: none;
+            color: rgb(23, 21, 21);
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        
+        
+    </style>
+</head>
+<body style="background: rgba(232, 211, 229, 0.641);">
+    <div>
+        <img src="Phone-PNG-Photo-Image.png" alt="dino" width = "70", height="100" >
+        <p class = "onnect"> onnect</p>
+    </div>
+        <div class ="column">
+            <h2>Filter</h2>
+            <table>
+                <hr>
+                    
+                    <table>
+                        <tr> <h4>Job category</h4></tr>
+            
+                        <label class="container">Information Technology
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        
+                          <label class="container">Health Science
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                          </label>
+                        
+                      
+                          <label class="container">Business and Finance
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                          </label>
+                       
+                          <label class="container">Education and Training
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                          </label>
+                          <hr>
+                    
+                        <tr><h4>Company</h4></tr>
+                    
+                            <label class="container">Purple Mango
+                                <input type="checkbox" >
+                                <span class="checkmark"></span>
+                            </label>
+                            
+                              <label class="container">The Zebra 
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            
+                          
+                              <label class="container">The Orange Goat
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                    <hr>
+                            <tr><h4>Review scores</h4></tr>
+                            <br>
+                                <label class="container"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                  </label>
+                                  <label class="container"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                  </label>
+                                  <label class="container"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                  </label>
+                                  <label class="container"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                  </label>
+                                  <label class="container"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                  </label>
+                               <br>
+                               <hr>
+
+                            <th>Location</th>
+                            <table>
+                                <div class="topnav"></div>
+                                <input type="text" placeholder="Search..">
+                              </div>
+                    
+                
+                   
+                    </table>
+                </table>
+    </div>
+    <div class = "column.right">
+        <div class = "input">
+            <table>
+                <br>
+                <br>
+                <th><img src="https://1fid.com/wp-content/uploads/2022/06/girl-profile-picture-1024x1024.jpg" alt="Profile picture" width="100">
+                </th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+                <th>Name: 	Maria Anders</th>
+                
+                <table>
+                    <br>
+                    <th>Available slots:</th>
+                    <table> 
+                        <tr>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                        </tr>
+                        <tr>
+                            <td>9:00</td>
+                            <td>13:00</td>
+                            <td>12:00</td>
+                            <td>12:00</td>
+                            <td>14:00</td>
+
+                        </tr>
+                        <tr>
+                            <td>10:00</td>
+                            <td></td>
+                            <td>15:00</td>
+                            <td>13:00</td>
+                            <td>16:00</td>
+                        </tr>
+                        <tr>
+                            <td>11:00</td>
+                        </tr>
+                    </table>
+                    <tr> <button class="button button2">Book a meeting</button></tr>
+                </table>
+            
+            </table>
+            <br>
+            <br>
+            <br>
+            <table>
+                <th><img src="https://media.gettyimages.com/id/1363289831/photo/head-and-shoulder-portrait-of-teenage-schoolboy-in-uniform.jpg?s=612x612&w=gi&k=20&c=dH-2bGviAm_PltQcUqt_tZwZU6rVohywLghsfleHvA4=" alt="Profile picture" width="100"> </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            <th>Name: Francisco Chang</th>
+                
+            <table>
+                <br>
+                <th>Available slots:</th>
+                <table> 
+                    <tr>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                    </tr>
+                    <tr>
+                        <td>10:00</td>
+                        <td>12:00</td>
+                        <td>11:00</td>
+                        <td>16:00</td>
+                        <td></td>
+
+                    </tr>
+                    <tr>
+                        <td>11:00</td>
+                        <td>14:00</td>
+                        <td>15:00</td>
+                        <td>17:00</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>12:00</td>
+                    </tr>
+                </table>
+                <tr><button class="button button2">Book a meeting</button> </tr>
+            </table>
+            <br>
+            <br>
+            <br>
+            <table>
+                <th><img src="https://media.gettyimages.com/id/1158014305/nl/foto/headshot-van-een-tiener-jongen.jpg?s=612x612&w=gi&k=20&c=P0csNo-QJkC90uGk7uDm7aj3R3h0og5_32o4f3l89OE=" alt=""width = "100"></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            <th>Name: Roland Mendel</th>
+                
+            <table>
+                <br>
+                <th>Available slots:</th>
+                <table> 
+                    <tr>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                    </tr>
+                    <tr>
+                        <td>10:00</td>
+                        <td>9:00</td>
+                        <td>12:00</td>
+                        <td>13:00</td>
+                        <td>14:00</td>
+
+                    </tr>
+                    <tr>
+                        <td>17:00</td>
+                        <td>10:00</td>
+                        <td>15:00</td>
+                        <td>15:00</td>
+                        <td>16:00</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>11:00</td>
+                    </tr>
+                </table>
+                <tr> 
+                    <button class="button button2">Book a meeting</button>
+                </tr>
+            </table>
+        </table>
+        <br>
+        <br>
+        <br>
+        <table>
+            <th><img src="https://flxt.tmsimg.com/assets/p9020354_n606205_cc_v9_ab.jpg" alt="Profile picture" width="100"></th>
+            <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+        <th><h4>Name: Helen Bennett</h4></th>
+                
+        <table>
+            <br>
+            <th>Available slots:</th>
+            <table> 
+                <tr>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>8:00</td>
+                    <td>12:00</td>
+                    <td>16:00</td>
+                    <td>14:00</td>
+
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>10:00</td>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>16:00</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>16:00</td>
+                </tr>
+            </table>
+            <tr> <button class="button button2">Book a meeting</button>
+            </tr>
+    
+        </table>
+        
+    </table>
+    
+        </table>
+        <br>
+        <br>
+        </div>
+        
+        
+    </div>
+</body>
+</html>
