@@ -1,0 +1,101 @@
+.onnect {
+    display: inline;
+    left: 4px;
+    font-size: 270%;
+    font-family: fantasy;
+}
+
+img {
+    display: inline-block;
+    margin-left: 40%;
+    font-size: 40px;
+}
+
+
+.input {
+    background: rgba(230, 178, 196, 0.763);
+    border-style: double solid;
+    border-width: 10px;
+    border-radius: 50px;
+    border-color: rgb(68, 66, 62);
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-left: 17%;
+    margin-right: 17%;
+    flex: auto;
+}
+
+.intro {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.day_options {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.times {
+    display: inline-table;
+}
+
+.button:hover {
+    background-color: #af97baab;
+    color: rgb(27, 19, 19);
+}
+
+.button:focus {
+    background-color: #983fc1ab;
+}
+
+button:active {
+    background-color: #9153aeab;
+}
+
+.button {
+    background-color: #fefdf5f1;
+    font-size: 15px;
+    transition-duration: 0.2s;
+    flex-wrap: wrap;
+
+}
+
+.mon,
+.tues,
+.thurs {
+    text-align: left;
+    margin-right: 15%;
+}
+
+.wed {
+    text-align: left;
+    margin-right: 10%;
+}
+
+.fri {
+    text-align: left;
+    margin-right: 20%;
+}
+
+.submit {
+    margin-left: 36%;
+    margin-bottom: 7%;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    background-color: #3a4343;
+    color: rgb(243, 247, 255);
+    padding: 7px 30px;
+    text-decoration: none;
+    display: inline-block;
+    position: static;
+    margin-left: 60%;
+    margin-top: px;
+    margin-bottom: 5%;
+    font-family: sans-serif;
+    border-radius: 8px;
+    font-size: 14px;
+    border-color: antiquewhite;
+}

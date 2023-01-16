@@ -1,0 +1,121 @@
+.input {
+    background: rgba(255, 247, 227, 0.729);
+    border-style: double solid;
+    border-width: 10px;
+    border-radius: 50px;
+    border-color: rgb(68, 66, 62);
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-left: 17%;
+    margin-right: 17%;
+    flex: auto;
+}
+
+.login {
+    text-align: top;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 110%;
+
+}
+
+.onnect {
+    display: inline;
+    left: 4px;
+    font-size: 270%;
+    font-family: fantasy;
+}
+
+img {
+    display: inline-block;
+    margin-left: 40%;
+    font-size: 40px;
+
+}
+
+.input_fields {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70%;
+}
+
+.submit:hover,
+.submmit:active {
+    background-color: rgb(225, 209, 209);
+}
+
+.nonpassword,
+.personal,
+.address {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin-left: -5%;
+}
+
+.nonpassword div,
+.personal div,
+.address div {
+    margin-left: 15%;
+    position: static;
+
+}
+
+.inputs,
+.country {
+    text-align: left;
+}
+
+.password,
+.country {
+    margin-top: -7px;
+    margin-left: 11%;
+    position: static;
+
+}
+
+.surname {
+    margin-right: -15%;
+}
+
+.personal div {
+    margin-top: 25px;
+}
+
+.address_header,
+.details_header {
+    text-align: center;
+    font-size: 130%
+}
+
+
+
+.submit {
+    background-color: #3a4343;
+    color: rgb(243, 247, 255);
+    padding: 7px 30px;
+    text-decoration: none;
+    display: inline-block;
+    position: static;
+    margin-left: 60%;
+    margin-top: px;
+    margin-bottom: 5%;
+    font-family: sans-serif;
+    border-radius: 8px;
+    font-size: 14px;
+    border-color: antiquewhite;
+}
+
+.container {
+    display: inline-flex;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 7%;
+    cursor: pointer;
+    font-size: 15px;
+    user-select: none;
+}
