@@ -1,0 +1,126 @@
+
+.input {
+    background: rgba(237, 228, 255, 0.763);
+    border-style:  double solid;
+    border-width: 10px;
+    border-radius: 50px;
+    border-color: rgb(68, 66, 62);
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-left: 17%;
+    margin-right: 17%;
+    flex: auto;
+}
+
+.login {
+    text-align: top;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    padding:5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 110%;
+
+}
+
+.input_fields, .deets, .location {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70%;
+}
+
+.submit:hover, .submmit:active {
+    background-color: rgb(225, 209, 209);
+}
+
+.nonpassword, .personal, .address, .deets {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin-left: -5%;
+}
+.nonpassword div, .personal div, .address div, .deets div{
+    margin-left: 15%;
+    position: static;
+
+}
+
+.inputs, .country, .job_category {
+    text-align: left;
+}
+
+.password, .country, .location {
+    margin-top: -7px;
+    margin-left: 11%;
+    position: static;
+    text-align: left;
+    
+}
+
+.surname {
+    margin-right: -15%;
+}
+
+.personal div {
+    margin-top: 25px;
+}
+
+.address_header, .details_header {
+    text-align: center;
+    font-size:130%
+}
+
+
+
+.submit {
+    background-color: #3a4343;
+    color: rgb(243, 247, 255);
+    padding: 7px 30px;
+    text-decoration: none;
+    display: inline-block;
+    position: static;
+    margin-left: 60%;
+    margin-bottom: 5%;
+    font-family: sans-serif;
+    border-radius: 8px;
+    font-size: 14px;
+    border-color: antiquewhite;
+}
+
+.container {
+    display: inline-flex;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 7%;
+    cursor: pointer;
+    font-size: 15px;
+    user-select: none;
+}
+
+.about {
+    width:100%;
+    text-align: left;
+}
+
+.onnect {
+display:inline;
+text-align: center;
+font-size: 270%;
+font-family:fantasy;
+}
+
+.phone {
+text-align: center;
+display: inline-block;
+margin-left: 40%;
+font-size: 40px;
+
+}
+
+.profile_pic {
+text-align: left;
+}
+
+.image {
+text-align: left;
+display: inline-block;
+}
