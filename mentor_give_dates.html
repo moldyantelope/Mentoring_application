@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+         .onnect {
+        display:inline;
+        left:4px;
+        font-size: 270%;
+        font-family:fantasy;
+        }
+
+        img {
+            display: inline-block;
+            margin-left: 40%;
+            font-size: 40px;   
+        }
+
+        
+        .input {
+            background: rgba(230, 178, 196, 0.763);
+            border-style:  double solid;
+            border-width: 10px;
+            border-radius: 50px;
+            border-color: rgb(68, 66, 62);
+            padding-left: 10%;
+            padding-right: 10%;
+            margin-left: 17%;
+            margin-right: 17%;
+            flex: auto;
+        }
+
+        .intro {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:20px;
+        }
+
+        .day_options {
+            font-size:20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .times {
+          display: inline-table;
+        }
+
+        .button:hover {
+            background-color: #af97baab; 
+            color: rgb(27, 19, 19);
+        }
+
+        .button:focus{
+            background-color: #983fc1ab;
+        }
+
+        button:active{
+            background-color: #9153aeab;
+        }
+
+        .button {
+            background-color: #fefdf5f1;
+            font-size: 15px;
+            transition-duration: 0.2s;
+            flex-wrap: wrap;
+
+        }
+
+        .mon, .tues, .thurs{
+            text-align: left;
+            margin-right:15%;
+        }
+
+        .wed {
+            text-align: left;
+            margin-right:10%;
+        }
+
+        .fri {
+            text-align: left;
+            margin-right:20%; 
+        }
+
+        .submit {
+            margin-left:36%;
+            margin-bottom:7%;
+            padding: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
+            display: flex;
+            background-color: #3a4343;
+            color: rgb(243, 247, 255);
+            padding: 7px 30px;
+            text-decoration: none;
+            display: inline-block;
+            position: static;
+            margin-left: 60%;
+            margin-top: px;
+            margin-bottom: 5%;
+            font-family: sans-serif;
+            border-radius: 8px;
+            font-size: 14px;
+            border-color: antiquewhite;
+        }
+
+
+    </style>
+</head>
+<body style="background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(244, 193, 247) 100%);">
+    <div>
+        <img src="Phone-PNG-Photo-Image.png" alt="dino" width = "70", height="100" >
+        <p class = "onnect"> onnect</p>
+    </div>
+    <div class = "input">
+        <div class = "intro">
+            <br>
+            Please select your available time slots <br><br>
+        </div>
+        <div class = "day_options">
+            <form action="main_mentor.html">
+                <div class = "monday">
+                    <input type="checkbox" id="day1" name="day1" value="Monday">
+                    <label for="day1" class = "mon"> Monday</label>
+                    <div class = "times">
+                        <button type="button" class = "button">8:00</button>
+                        <button type="button" class = "button">9:00</button>
+                        <button type="button" class = "button">10:00</button>
+                        <button type="button" class = "button">11:00</button>
+                        <button type="button" class = "button">12:00</button>
+                        <br>
+                        <button type="button" class = "button">14:00</button>
+                        <button type="button" class = "button">15:00</button>
+                        <button type="button" class = "button">16:00</button>
+                        <button type="button" class = "button">17:00</button>
+                    </div>
+                </div>
+                <br>
+
+                <div class = "tuesday">
+                    <input type="checkbox" id="day2" name="day2" value="Tuesday">
+                    <label for="day2" class = "tues"> Tuesday</label>
+                    <div class = "times">
+                        <button type="button" class = "button">8:00</button>
+                        <button type="button" class = "button">9:00</button>
+                        <button type="button" class = "button">10:00</button>
+                        <button type="button" class = "button">11:00</button>
+                        <button type="button" class = "button">12:00</button>
+                        <br>
+                        <button type="button" class = "button">14:00</button>
+                        <button type="button" class = "button">15:00</button>
+                        <button type="button" class = "button">16:00</button>
+                        <button type="button" class = "button">17:00</button>
+                    </div>
+                </div>
+                <br>
+    
+                <div class = "wednesday">
+                    <input type="checkbox" id="day3" name="day3" value="Wednesday">
+                    <label for="day3" class = "wed"> Wednesday</label>
+                    <div class = "times">
+                        <button type="button" class = "button">8:00</button>
+                        <button type="button" class = "button">9:00</button>
+                        <button type="button" class = "button">10:00</button>
+                        <button type="button" class = "button">11:00</button>
+                        <button type="button" class = "button">12:00</button>
+                        <br>
+                        <button type="button" class = "button">14:00</button>
+                        <button type="button" class = "button">15:00</button>
+                        <button type="button" class = "button">16:00</button>
+                        <button type="button" class = "button">17:00</button>
+                    </div>
+                </div>
+                <br>
+
+                <div class = "thursday">
+                    <input type="checkbox" id="day4" name="day4" value="Thursday">
+                    <label for="day4" class = "thurs"> Thursday</label>
+                    <div class = "times">
+                        <button type="button" class = "button">8:00</button>
+                        <button type="button" class = "button">9:00</button>
+                        <button type="button" class = "button">10:00</button>
+                        <button type="button" class = "button">11:00</button>
+                        <button type="button" class = "button">12:00</button>
+                        <br>
+                        <button type="button" class = "button">14:00</button>
+                        <button type="button" class = "button">15:00</button>
+                        <button type="button" class = "button">16:00</button>
+                        <button type="button" class = "button">17:00</button>
+                    </div>
+                </div>
+                <br>
+
+                <div class = "friday">
+                    <input type="checkbox" id="day5" name="day5" value="Friday">
+                    <label for="day5" class = "fri"> Friday</label>
+                    <div class = "times">
+                        <button type="button" class = "button">8:00</button>
+                        <button type="button" class = "button">9:00</button>
+                        <button type="button" class = "button">10:00</button>
+                        <button type="button" class = "button">11:00</button>
+                        <button type="button" class = "button">12:00</button>
+                        <br>
+                        <button type="button" class = "button">14:00</button>
+                        <button type="button" class = "button">15:00</button>
+                        <button type="button" class = "button">16:00</button>
+                        <button type="button" class = "button">17:00</button>
+                    </div>
+                </div>
+                <br>
+
+                <input type="submit" value="Save & Continue" class = "submit">
+              </form>
+
+        </div>
+    </div>
+</body>
+</html>
